@@ -1,0 +1,246 @@
+:root {
+    --bg-color: #1b1b1b;
+    --font-color:#e0e0e0;
+    --link-color: #7491c8;
+    --nav-hover-color: rgb(120, 120, 120);
+}
+
+[data-theme="light"] {
+    --bg-color: #e0e0e0;
+    --font-color:#1b1b1b;
+    --link-color: #7491c8;
+    --nav-hover-color: rgb(120, 120, 120); 
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+    max-width: 1860px;
+    margin: 0 auto;
+    padding: 0 20px;
+    border: 10px solid var(--font-color);
+}
+
+/* ========== Navigation ========== */
+
+.navbar {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.nav-right button {
+    color: var(--font-color);
+    background-color: var(--bg-color);
+    margin-right: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--font-color);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+nav li {
+    display: inline;
+    padding-right: 20px;
+}
+
+li a:hover {
+    background-color: var(--nav-hover-color);
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ========== Title ========== */
+
+.title {
+    text-align: center;
+    padding-bottom: 90px;
+}
+
+.title p {
+    color: gray;
+    padding-top: 10px;
+}
+
+/* ========== Main Section ========== */
+
+section li {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.main-sections {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid var(--font-color);
+}
+
+section {
+    flex: 1;
+}
+
+section:nth-of-type(2) {
+    flex: 1.5;
+}
+
+section:nth-of-type(3) {
+    flex: 1.5;
+}
+
+/* ========== Projects ========== */
+
+.projects {
+    border: 1px solid var(--font-color);
+    
+}
+
+.projects li {
+    padding: 1rem;
+    border-bottom: 1px solid var(--font-color);
+}
+
+.projects h3 {
+    padding: 1rem;
+}
+
+/* ========== Work Experience ========== */
+
+.work-experience {
+    border: 1px solid var(--font-color);
+    padding: 1rem;
+}
+
+.work-experience h3 {
+    padding-bottom: 1.7rem;
+}
+
+.work-experience p {
+    line-height: 1rem;
+    padding-bottom: 1rem;
+}
+
+.work-experience a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+.work-experience .opensource {
+    padding-top: 2rem;
+}
+
+/* ========== Education ========== */
+
+.education {
+    border: 1px solid var(--font-color);
+    padding: 1rem;
+}
+
+.education .graduation {
+    padding-bottom: 1rem;
+}
+
+.education h3 {
+    padding-bottom: 1rem;
+}
+
+.courses li {
+    padding: 0.5rem;
+}
+
+.courses li::before {
+    content: "- ";
+    left: 0;
+}
+
+/* ========== Reviews ========== */
+
+.reviews h3 {
+    padding: 2rem;
+}
+
+.review-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 20px; 
+}
+
+.first-review {
+    width: 100%;
+    max-width: 300px;
+    border: 4px solid var(--font-color);
+    border-radius: 40px;
+    padding: 20px;
+}
+
+.second-review {
+    width: 100%;
+    max-width: 300px;
+    border: 4px solid var(--font-color);
+    border-radius: 40px;
+    padding: 20px;
+}
+
+.third-review {
+    width: 100%;
+    max-width: 300px;
+    border: 4px solid var(--font-color);
+    border-radius: 40px;
+    padding: 20px;
+}
+
+/* ========== Footer ========== */
+
+footer {
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 250px;
+}
+
+/* ========== Media Queries ========== */
+
+@media only screen and (max-width: 600px) {
+    
+}
+
+/* ========== Projects.html ========== */
+
+
+
+/* ========== Articles.html ========== */
+
+
+
+/* ========== Contact.html ========== */
+
+
