@@ -222,12 +222,6 @@ footer {
     padding-bottom: 250px;
 }
 
-/* ========== Media Queries ========== */
-
-@media only screen and (max-width: 600px) {
-    
-}
-
 /* ========== Projects.html ========== */
 
 .title-project {
@@ -296,7 +290,6 @@ footer {
 }
 
 .main-contact h1 {
-    text-align: left;
     padding: 2rem 0rem 1rem 8rem;
 }
 
@@ -314,4 +307,33 @@ footer {
     max-width: 300px;
     height: 3rem;
     width: 16rem;
+}
+
+
+/* ========== Media Queries ========== */
+
+@media only screen and (max-width: 600px) {
+    .main-projects .game img {
+        height: auto;
+        width: 100%;
+    }
+
+    .main-contact {
+        width: 90%;
+        max-width: 400px;
+    }
+    
+    .main-contact h1 {
+        padding: 1rem;
+    } 
+
+    .main-contact .form-row {
+        padding: 1rem;
+    }
+
+    .main-contact .form-row input, 
+    .main-contact .form-row textarea {
+        width: 100%;
+    }
+
 }
