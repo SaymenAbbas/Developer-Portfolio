@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="public/landing-page.png" />
+    <link rel="icon" href="..public/landing-page.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Saymen Mesoud Abbas">
     <meta name="description" content="A simple Website about projects with navigation links">
     <meta name="keywords" content="Projects, developer and navigation.">
     <meta name="title" content="Basic Page about Projects">
     <meta name="type" content="website">
-    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="../src/style.css">
     <title>Projects</title>
 
     <!-- OG Tags -->
@@ -18,22 +18,27 @@
     <meta property="og:author" content="Saymen Mesoud Abbas">
     <meta property="og:description" content="A simple Website about projects with navigation links">
 
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    
 </head>
 <body>
+    <div class="container">
     <header>
       <nav class="navbar">
           <div class="nav-left">
-            <img src="/src/profile-picture.png" alt="Gif of profile icon" width="35px" height="35px">
+            <img src="../src/profile-picture.png" alt="profile icon" width="35px" height="35px">
             <span>Saymen Mesoud Abbas</span>
           </div>
           <div class="nav-right">
-            
             <ul>
-              <button id="btn-switch-theme"><em>Dark Mode Enable!</em></button>
-              <li><a href="/index.html">Home</a></li>
-              <li><a href="/pages/projects.html">Projects</a></li>
-              <li><a href="/pages/articles.html">Articles</a></li>
-              <li><a href="/pages/contact.html">Contact</a></li>
+              <button id="btn-switch-theme">Dark Mode Enable!</button>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="articles.html">Articles</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
       </nav>
@@ -43,35 +48,36 @@
     </header>
     <main>
       <div class="main-projects">
-        <article class="snake-content">
+        <article class="game snake-content">
             <h3>Snake Game</h3>
             <p>Lorem, ipsum dolor sit amet consectetur a
                 dipisicing elit. Animi necessitatibus dolorum aliquam enim quia, <br> 
                 autem libero quibusdam maxime ipsam, eaque debitis, consectetur illo. 
                 Provident, debitis? Odio aut nobis quis obcaecati.</p>
-              <img src="/public/snake_game.jpg" alt="">
+              <img src="../public/snake_game.jpg" alt="">
         </article>
-        <article class="tictactoe-content">
+        <article class="game tictactoe-content">
             <h3>Tic Tac Toe</h3>
             <p>Lorem, ipsum dolor sit amet consectetur a
                 dipisicing elit. Animi necessitatibus dolorum aliquam enim quia, <br> 
                 autem libero quibusdam maxime ipsam, eaque debitis, consectetur illo. 
                 Provident, debitis? Odio aut nobis quis obcaecati.</p>
-            <img src="/public/tic-tac-toes_game.png" alt="">
+            <img src="../public/tic-tac-toes_game.png" alt="">
         </article>
-        <article class="tetris-content">
+        <article class="game tetris-content">
             <h3>Tetris</h3>
             <p>Lorem, ipsum dolor sit amet consectetur a
                 dipisicing elit. Animi necessitatibus dolorum aliquam enim quia, <br> 
                 autem libero quibusdam maxime ipsam, eaque debitis, consectetur illo. 
                 Provident, debitis? Odio aut nobis quis obcaecati.</p>
-            <img src="/public/tetris_game.jpg" width="800rem" alt="">
+            <img src="../public/tetris_game.jpg" width="800rem" alt="">
         </article>
       </div>
     </main>
     <footer>
       <h3>@ all rights reserved 2025</h3>
     </footer>
-<script src="/src/switch_theme.js"></script>
+<script src="../src/switch_theme.js"></script>
+</div>
 </body>
 </html>

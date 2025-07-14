@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="public/landing-page.png" />
+    <link rel="icon" href="../public/landing-page.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <meta name="author" content="Saymen Mesoud Abbas">
     <meta name="description" content="A simple Website about Contact information">
     <meta name="type" content="website">
     <meta name="title" content="Basic Contact Page">
-    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="../src/style.css">
     <title>Contact</title>
     
     <!-- OG Tags -->
@@ -17,52 +17,56 @@
     <meta property="og:author" content="Saymen Mesoud Abbas">
     <meta property="og:description" content="A simple Website about Contact information">
     <meta property="og:type" content="website">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">    
+    
 </head>
 <body>
+    <div class="container">
     <header>
       <nav class="navbar">
           <div class="nav-left">
-            <img src="/src/profile-picture.png" alt="Gif of profile icon" width="35px" height="35px">
+            <img src="../src/profile-picture.png" alt="profile icon" width="35px" height="35px">
             <span>Saymen Mesoud Abbas</span>
           </div>
           <div class="nav-right">
             
             <ul>
-              <button id="btn-switch-theme"><em>Dark Mode Enable!</em></button>
-              <li><a href="/index.html">Home</a></li>
-              <li><a href="/pages/projects.html">Projects</a></li>
-              <li><a href="/pages/articles.html">Articles</a></li>
-              <li><a href="/pages/contact.html">Contact</a></li>
+              <button id="btn-switch-theme">Dark Mode Enable!</button>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="articles.html">Articles</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
       </nav>
+    </header>
+    <main class="contact-container">
       <div class="main-contact">
         <h1>Contact</h1>
         <form action="">
-            <div class="name">
-                <label for="">Name: </label>
-                <input type="text"><br><br>
+            <div class="form-row name">
+                <input type="text" name="user_name" placeholder=" Name" width="50" height="50"><br><br>
             </div>
-            <div class="email">
-                <label for="">E-Mail: </label>
-                <input type="text" name="" id=""><br><br>
+            <div class="form-row email">
+                <input type="email" name="user_mail" placeholder=" E-Mail"><br><br>
             </div>
-            <div class="message">
-                <label for="">Message: </label>
-                <textarea name="" id=""></textarea>
+            <div class="form-row message">
+                <textarea name="user_message" placeholder=" Message"></textarea>
             </div>
-            <div class="submit">
+            <div class="form-row submit">
                 <br><input type="submit">
             </div>
         </form>
       </div>
-    </header>
-    <main>
-
     </main>
     <footer>
       <h3>@ all rights reserved 2025</h3>
     </footer>
-<script src="/src/switch_theme.js"></script>
+<script src="../src/switch_theme.js"></script>´
+</div>
 </body>
 </html>

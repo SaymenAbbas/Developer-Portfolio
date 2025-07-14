@@ -206,23 +206,7 @@ section:nth-of-type(3) {
     padding: 20px; 
 }
 
-.first-review {
-    width: 100%;
-    max-width: 300px;
-    border: 4px solid var(--font-color);
-    border-radius: 40px;
-    padding: 20px;
-}
-
-.second-review {
-    width: 100%;
-    max-width: 300px;
-    border: 4px solid var(--font-color);
-    border-radius: 40px;
-    padding: 20px;
-}
-
-.third-review {
+.review-cards .card {
     width: 100%;
     max-width: 300px;
     border: 4px solid var(--font-color);
@@ -260,20 +244,12 @@ footer {
     padding-bottom: 5rem;
 }
 
-.main-projects .snake-content img {
+.main-projects .game img {
     padding-top: 3rem;
 }
 
 .main-projects .tictactoe-content {
     padding-bottom: 5rem;
-}
-
-.main-projects .tictactoe-content img {
-    padding-top: 3rem;
-}
-
-.main-projects .tetris-content img {
-    padding-top: 3rem;
 }
 
 /* ========== Articles.html ========== */
@@ -303,7 +279,39 @@ footer {
 
 /* ========== Contact.html ========== */
 
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
 .main-contact {
-    text-align: center;
-    padding-bottom: 90px;
+    border-radius: 50px;
+    width: 35rem;
+    height: 29rem;
+    background-color: var(--font-color);
+    color: var(--bg-color);    
+}
+
+.main-contact h1 {
+    text-align: left;
+    padding: 2rem 0rem 1rem 8rem;
+}
+
+.main-contact .form-row {
+    padding: 2rem 0rem 1rem 8rem;
+}
+
+.main-contact .form-row input {
+    width: 250px;
+    height: 25px;
+}
+
+.main-contact .form-row textarea {
+    resize: none;
+    max-width: 300px;
+    height: 3rem;
+    width: 16rem;
 }
