@@ -2,6 +2,8 @@
     --bg-color: #1b1b1b;
     --font-color:#e0e0e0;
     --link-color: #7491c8;
+    --cookie-bg-color: rgb(72, 72, 72);
+    --cookie-font-color: #e0e0e0;
     --nav-hover-color: rgb(120, 120, 120);
 }
 
@@ -9,6 +11,8 @@
     --bg-color: #e0e0e0;
     --font-color:#1b1b1b;
     --link-color: #7491c8;
+    --cookie-bg-color: #ffffff;
+    --cookie-font-color: #000000;
     --nav-hover-color: rgb(120, 120, 120); 
 }
 
@@ -212,6 +216,49 @@ section:nth-of-type(3) {
     border: 4px solid var(--font-color);
     border-radius: 40px;
     padding: 20px;
+}
+
+/* ========== Cookies ========== */
+
+.cookie-wrapper {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 9999;
+    font-size: 20px;
+}
+
+.cookie {
+    height: 20rem;
+    width: 20rem;
+    text-align: center;
+    border-radius: 2rem;
+    background-color: var(--cookie-bg-color);
+    color: var(--cookie-font-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.cookie-wrapper .cookie img {
+    width: 4rem;
+    height: 4rem;
+    align-self: flex-start;
+    margin: 1rem 0 0 1rem;
+}
+
+.cookie-wrapper .cookie p {
+    padding: 2rem 0rem 0 0;
+}
+
+.cookie-wrapper .cookie button {
+    width: 16rem;
+    height: 3rem;
+    border-radius: 2rem;
+    border: 1px solid white;
+    font-size: 1rem;
 }
 
 /* ========== Footer ========== */

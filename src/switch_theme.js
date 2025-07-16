@@ -3,7 +3,7 @@ const toggleButton = document.getElementById("btn-switch-theme");
 const root = document.documentElement;
 
 function toggleTheme () {
-    // gets data-theme from html tag
+    // gets data-theme from html tag // first time is null
     const currentTheme = root.getAttribute("data-theme");
 
     if (currentTheme === "light") {
