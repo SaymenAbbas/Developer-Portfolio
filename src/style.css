@@ -57,6 +57,9 @@ body {
     padding: 0.5rem;
     border: 3px solid var(--font-color);
     border-radius: 50px;
+}
+
+.nav-right button.theme-animated {
     transition: background-color 2s;
 }
 
