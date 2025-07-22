@@ -224,6 +224,7 @@ section:nth-of-type(3) {
 /* ========== Cookies ========== */
 
 .cookie-wrapper {
+    display: none;
     position: fixed;
     right: 2rem;
     bottom: 2rem;
